@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "video-api"
+version = "0.1.0"
+description = "To develop an API that serves a video based on a simple authorization system using the specified tech stack (Python, FastAPI, PostgreSQL, and Prisma), a clear plan of action has been established from the gathered information. The system encompasses a simplistic yet secure authorization mechanism catering directly to a singular user role setup, negating the need for public video access without authorization. "
+authors = ["AutoGPT <info@agpt.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+bcrypt = "*"
+fastapi = "^0.75.0"
+passlib = {version = "*", extras = ["bcrypt"]}
+prisma = "*"
+pydantic = "*"
+python-jose = {version = "*", extras = ["cryptography"]}
+python-multipart = "^0.0.5"
+uvicorn = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
